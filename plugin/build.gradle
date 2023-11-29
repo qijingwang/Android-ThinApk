@@ -1,17 +1,24 @@
-apply plugin: 'java-library'
-apply plugin: 'groovy'
+plugins {
+    id 'java-gradle-plugin'
+}
+gradlePlugin{
+    plugins{
+        DependenciesPlugin{
+            id = 'com.thinapk.plugin.thinapk'
+            implementationClass = 'com.thinapk.plugin.ThinApkPlugin'
+        }
+    }
+}
 
-apply plugin: 'com.github.dcendents.android-maven'
-group='com.github.houjinyun'
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
-    compile gradleApi()
-    compile localGroovy()
+    implementation gradleApi()
+    implementation localGroovy()
 
-    compile 'com.android.tools.build:transform-api:1.5.0'
-    compile 'com.android.tools.build:gradle:3.0.1'
+    implementation 'com.android.tools.build:transform-api:1.5.0'
+    implementation 'com.android.tools.build:gradle:7.4.2'
 
 
 }

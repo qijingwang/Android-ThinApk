@@ -14,18 +14,16 @@ import butterknife.OnClick;
 
 public class MainActivity extends AppCompatActivity {
 
-    @BindView(R2.id.btn_start)
     Button mBtnStart;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        ButterKnife.bind(this);
+//        mBtnStart = findVi
     }
 
-    @OnClick(value = {R2.id.btn_start, R2.id.btn_close, R2.id.btn_send})
-    void onClick(View v) {
+  public   void onClick(View v) {
         if (v.getId() == R.id.btn_start) {
             startActivity(new Intent(this, LibTest1Activity.class));
             int i = com.hm.library1.R.id.action0;
