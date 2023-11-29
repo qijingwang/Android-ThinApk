@@ -2,15 +2,11 @@ package com.hm.iou.thinapk.demo;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
-import com.hm.library1.LibTest1Activity;
+import androidx.appcompat.app.AppCompatActivity;
 
-import butterknife.BindView;
-import butterknife.ButterKnife;
-import butterknife.OnClick;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -25,8 +21,6 @@ public class MainActivity extends AppCompatActivity {
 
   public   void onClick(View v) {
         if (v.getId() == R.id.btn_start) {
-            startActivity(new Intent(this, LibTest1Activity.class));
-            int i = com.hm.library1.R.id.action0;
         }
     }
 

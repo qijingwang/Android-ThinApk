@@ -1,4 +1,4 @@
-package com.hm.iou.thinapk.plugin
+package com.thinapk.plugin
 
 import com.android.build.gradle.AppExtension
 import org.gradle.api.Plugin

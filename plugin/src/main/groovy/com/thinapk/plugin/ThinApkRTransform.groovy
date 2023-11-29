@@ -1,4 +1,5 @@
-package com.hm.iou.thinapk.plugin
+package com.thinapk.plugin
+
 
 import com.android.build.api.transform.*
 import com.android.build.gradle.internal.pipeline.TransformManager

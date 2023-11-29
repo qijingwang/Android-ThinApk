@@ -1,4 +1,5 @@
-package com.hm.iou.thinapk.plugin
+package com.thinapk.plugin
+
 
 import org.gradle.api.Action
 import org.gradle.api.NamedDomainObjectContainer

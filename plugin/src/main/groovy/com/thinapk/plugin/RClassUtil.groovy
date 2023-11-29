@@ -1,4 +1,4 @@
-package com.hm.iou.thinapk.plugin
+package com.thinapk.plugin
 
 import org.objectweb.asm.*
 
