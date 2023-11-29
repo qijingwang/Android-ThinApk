@@ -3,6 +3,8 @@ package com.thinapk.plugin
 
 import com.android.build.api.transform.*
 import com.android.build.gradle.internal.pipeline.TransformManager
+import org.apache.commons.codec.digest.DigestUtils
+import org.apache.commons.io.FileUtils
 import org.gradle.api.Project
 /**
  * 对R文件进行瘦身
